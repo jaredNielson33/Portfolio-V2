@@ -1,0 +1,24 @@
+/* --------- */
+/*Scrollbar   */
+/* --------- */
+
+&::-webkit-scrollbar {
+  width: 7px;
+
+  /* Track */
+  &-track {
+    background: #bfcde8;
+  }
+
+  /* Handle */
+  &-thumb {
+    background: var(--blue-1);
+    border-radius: 12px;
+
+    /* Handle on hover */
+    &:hover {
+      background: #647fb0;
+      border-radius: 12px;
+    }
+  }
+}

@@ -1,0 +1,150 @@
+@import 'colors';
+@import 'global'; 
+/* --------- */
+/* Home section */
+/* --------- */
+
+.home-header {
+  padding-top: 80px;
+}
+
+.home-section {
+  position: relative;
+  z-index: 1;
+  background-image: $image-gradient, url(../assets/home-bg-3.png);
+  background-color: $light;
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-bottom: 135px;
+  padding-top: 30px;
+  background-size: cover;
+}
+
+.home-content {
+  padding: 9rem 0 5rem;
+  color: $light;
+  text-align: left;
+  .heading {
+    font-size: 2.4em;
+    padding-left: 50px;
+  }
+  .heading-name {
+    font-size: 2.5em;
+    padding-left: 45px;
+    .main-name {
+      color: $yellow;
+    }
+  }
+}
+
+.profile__shape {
+  width: 40rem;
+  height: 40rem;
+  shape-outside: circle(50% at 50% 50%);
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(44% at 44% 51%);
+  position: relative;
+  display: flex;
+  align-self: center;
+}
+
+.myAvtar {
+  justify-content: center;
+  padding-top: 9em;
+  display: flex;
+}
+
+.profileShape {
+  width: 22rem;
+  height: 22rem;
+  -webkit-shape-outside: circle(50% at 50% 50%);
+  shape-outside: circle(50% at 50% 50%);
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(44% at 44% 51%);
+  position: relative;
+  display: flex;
+  align-self: center;
+  .profileImg {
+    height: 100%;
+    transition: all .5s;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .myAvtar {
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+}
+
+.home-about-section {
+  position: relative;
+  padding-bottom: 70px;
+  padding-top: 30px;
+  background: $white;
+  .home-about-description {
+    color: $black;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  .home-about-body {
+    padding-top: 50px;
+    font-size: 1.2em;
+    text-align: left;
+  }
+  .home-about-social {
+    text-align: center;
+    padding-top: 25px;
+    color: $yellow;
+  }
+  .home-about-social-links {
+    justify-content: center;
+    padding-top: 15px;
+    display: inline-block;
+    position: relative;
+    padding-inline-start: 0;
+    .home-social-icons {
+      position: relative;
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      font-size: 1.2em;
+      line-height: 2em;
+      background: rgba(255, 255, 255, 0.972);
+      border-radius: 50%;
+      transition: 0.5s;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background: $secondary-blue;
+        transition: 0.5s;
+        transform: scale(0.9);
+        z-index: -1;
+      }
+    }
+    .social-icons {
+      display: inline-block;
+      padding-right: 15px;
+      padding-left: 15px;
+      svg {
+        height: 25px;
+        width: 25px;
+        &:hover {
+          transform: scale(1.5);
+          transition: 0.5s;
+        }
+      }
+      .icon-color {
+        color: $secondary-blue;
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+html {
+  --section-background-color: linear-gradient(
+    to bottom left,
+    rgba(242, 242, 242, 0.582),
+    rgba(151, 151, 151, 0.904)
+  );
+
+  --image-gradient: linear-gradient(
+    to bottom left,
+    rgba(17, 16, 16, 0.278),
+    rgba(12, 10, 22, 0.463)
+  );
+
+  --imp-text-color: #E3E7F1;
+  --alt-text-color: #52688F;
+  --blue-1: #7391C8;
+  
+  --blue-2: #0D659D;
+  --light-blue: #A2C4E0;
+  --yellow-1: #F7CB2D;
+  --royal-blue: #1390E0;
+
+  --yellow: #97843d;
+}
+
+.purple {
+  color: var(--yellow-1) !important;
+}
+
+button:focus {
+  box-shadow: none !important;
+}
+
+/* --------- */
+/*  Preloader */
+/* --------- */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  background-color: #0c0513;
+  background-image: url(./assets/pre.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#preloader-none {
+  opacity: 0;
+}
+
+#no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
+/* --------- */
+/*Scrollbar   */
+/* --------- */
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #bfcde8;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--blue-1);
+  border-radius: 12px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #647fb0;
+  border-radius: 12px;
+}
+
+/* --------- */
+/* Home section */
+/* --------- */
+
+
+/* --------- */
+/* Projects */
+/* --------- */
+
+/* --------- */
+/* About */
+/* --------- */
+
+/* --------- */
+/* Resume */
+/* --------- */
+
+

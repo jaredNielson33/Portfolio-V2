@@ -1,0 +1,53 @@
+@import 'colors';
+
+.waves, .waves-opacity {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.waves svg, .waves-opacity svg {
+  position: relative;
+  display: block;
+  width: calc(117% + 1.3px);
+  height: 120px;
+}
+
+.waves .shape-fill {
+  fill: $white;
+}
+
+.waves-opacity svg {
+  width: calc(206% + 1.3px);
+  height: 96px;
+  transform: rotateY(180deg);
+}
+
+.waves-opacity .shape-fill {
+  fill: $white;
+}
+
+.curve {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+
+  svg {
+    position: relative;
+    display: block;
+    width: calc(268% + 1.3px);
+    height: 279px;
+  }
+
+  .shape-fill {
+    fill: $white;
+  }
+}

@@ -1,0 +1,88 @@
+@import 'colors';
+
+$section-background-color: linear-gradient(
+    to bottom left,
+    rgba(242, 242, 242, 0.582),
+    rgba(151, 151, 151, 0.904)
+  );
+
+$image-gradient: linear-gradient(
+    to bottom left,
+    rgba(17, 16, 16, 0.578),
+    rgba(12, 10, 22, 0.763)
+  );
+
+button:focus {
+  box-shadow: none !important;
+}
+
+// Button Styles
+.btn-primary, .btn-primary:hover {
+  color: $dark-grey-3 !important;
+  border-color: $yellow !important;
+  & {
+    background-color: $yellow !important;
+    &:hover {
+      background-color: $dark-yellow !important;
+      border-color: $dark-yellow !important;
+    }
+  }
+  &:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
+
+/* --------- */
+/*  Preloader */
+/* --------- */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  background-color: $black;
+  background-image: url(./assets/pre.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#preloader-none {
+  opacity: 0;
+}
+
+#no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+      @media only screen and (max-width: 37.5em) {         //600px
+          @content;
+      }
+  }
+  @if $breakpoint == tab-port {
+      @media only screen and (max-width: 56.25em) {        //900px
+          @content;
+      }
+  }
+  @if $breakpoint == tab-port-touch {
+      @media only screen and (max-width: 56.25em), 
+      only screen and (hover:none) {                       //900px
+          @content;
+      }
+  }
+  @if $breakpoint == tab-land {
+      @media only screen and (max-width: 75em) {           //1200px
+          @content;
+      }
+  }
+  @if $breakpoint == big-desktop {
+      @media only screen and (min-width: 112.5em) {        //1800px    
+          @content;
+      }
+  }
+}
