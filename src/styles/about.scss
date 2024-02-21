@@ -1,4 +1,5 @@
 @import 'colors';
+@import 'global';
 
 /* --------- */
 /* About */
@@ -36,6 +37,10 @@
   padding-bottom: 70px;
   background-color: $white;
   color: $primary-blue;
+
+  @include respond(phone) {
+    bottom: 1px
+  }
 }
 
 .tech-icons {

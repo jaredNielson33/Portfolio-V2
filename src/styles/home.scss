@@ -18,6 +18,11 @@
   padding-bottom: 135px;
   padding-top: 30px;
   background-size: cover;
+
+  @include respond(phone) {
+    padding-bottom: 285px;
+    padding-top: 170px;
+  }
 }
 
 .home-content {
