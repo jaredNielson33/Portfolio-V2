@@ -1,8 +1,9 @@
+@import './colors';
 /* --------- */
 /*Scrollbar   */
 /* --------- */
 
-&::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 7px;
 
   /* Track */
@@ -12,7 +13,7 @@
 
   /* Handle */
   &-thumb {
-    background: var(--blue-1);
+    background: $secondary-blue;
     border-radius: 12px;
 
     /* Handle on hover */

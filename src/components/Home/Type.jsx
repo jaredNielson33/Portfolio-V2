@@ -1,6 +1,5 @@
-import React from "react";
 import Typewriter from "typewriter-effect";
-import "../../styles/typewritter.scss";
+import "./typewritter.scss";
 
 function Type() {
   return (

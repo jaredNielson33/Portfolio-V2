@@ -1,4 +1,4 @@
-import "../../styles/waves.scss";
+import "./waves.scss";
 
 const WaveOpacity = () => {
   return (

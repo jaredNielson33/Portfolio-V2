@@ -1,92 +1,92 @@
-@import 'colors';
-@import 'global';
+@import "colors";
+@import "global";
 
 .footer {
-  background-color: $dark-grey-3;
-  padding: 5rem 0;
-  font-size: 1.4rem;
-  color: $light-grey-1;
+    background-color: $dark-grey-3;
+    padding: 5rem 0;
+    font-size: 1.4rem;
+    color: $light-grey-1;
 
-  @include respond(tab-port) {
-      padding: 8rem 0;
-  }
+    @include respond(tab-port) {
+        padding: 8rem 0;
+    }
 
-  &__logo-box {
-      text-align: center;
-  }
+    &__logo-box {
+        text-align: center;
+    }
 
-  &__logo {
-      width: 15rem;
-      height: auto;
-  }
+    &__logo {
+        width: 15rem;
+        height: auto;
+    }
 
-  &__navigation {
-      padding-top: 2rem;
-      display: flex;
-      align-items: center;
-      flex-direction: column;
+    &__navigation {
+        padding-top: 2rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
 
-      @include respond(tab-port) {
-          width: 100%;
-          text-align: center;
-      }
-  }
+        @include respond(tab-port) {
+            width: 100%;
+            text-align: center;
+        }
+    }
 
-  &__list {
-      list-style: none;
-      margin-top: 15px;
-      padding-left: 0;
-  }
+    &__list {
+        list-style: none;
+        margin-top: 15px;
+        padding-left: 0;
+    }
 
-  &__item {
-      display: inline-block;
-      border: 1px solid $white;
-      border-radius: 50%;
-      
-      &:not(:last-child) {
-          margin-right: 1.5rem;
-      }
-      a {
-          display: flex;
-          padding: 13px;
-          text-decoration: none;
-          color: $white;
-      }
-      @include respond(phone) {
-          a {
-              padding: 10px;
-          }
-          i {
-              font-size: 3rem;
-          }
-      }
+    &__item {
+        display: inline-block;
+        border: 1px solid $white;
+        border-radius: 50%;
 
-      &:hover {
-          background-color: $white;
-          a {
-            color: $dark-grey-3 !important;
-          }
-      }
-  }
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+        a {
+            display: flex;
+            padding: 13px;
+            text-decoration: none;
+            color: $white;
+        }
+        @include respond(phone) {
+            a {
+                padding: 10px;
+            }
+            i {
+                font-size: 3rem;
+            }
+        }
 
-  &__copyright {
-      border-top: 1px solid $light-grey-1;
-      padding-top: 2rem;
-      color: $light-grey-1;
-      width: 70%;
-      display: flex;
-      justify-content: center;
-      margin: auto;
-      font-size: 1rem;
+        &:hover {
+            background-color: $white;
+            a {
+                color: $dark-grey-3 !important;
+            }
+        }
+    }
 
-      sub {
-        line-height: unset;
-      }
+    &__copyright {
+        border-top: 1px solid $light-grey-1;
+        padding-top: 2rem;
+        color: $light-grey-1;
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        font-size: 1rem;
 
-      @include respond(tab-port) {
-          width: 100%;
-          float: none;
-          font-size: .85rem;
-      }
-  }
+        sub {
+            line-height: unset;
+        }
+
+        @include respond(tab-port) {
+            width: 100%;
+            float: none;
+            font-size: 0.85rem;
+        }
+    }
 }

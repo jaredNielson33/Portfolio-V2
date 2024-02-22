@@ -5,7 +5,7 @@ function AboutCard() {
     <Card className='quote-card-view'>
       <Card.Body>
         <blockquote className='blockquote mb-0'>
-          <p className='card-text'>
+          <p className='about-text'>
             I'm a family-oriented individual, blessed with a supportive wife who
             constantly inspires me to strive for excellence. Together, we
             cherish the joy and adventure brought by our three adorable

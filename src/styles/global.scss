@@ -33,31 +33,7 @@ button:focus {
   }
 }
 
-/* --------- */
-/*  Preloader */
-/* --------- */
-#preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 999999;
-  background-color: $black;
-  background-image: url(./assets/pre.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-#preloader-none {
-  opacity: 0;
-}
-
-#no-scroll {
-  overflow: hidden;
-  height: 100vh;
-}
-
+// Media Queries
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
       @media only screen and (max-width: 37.5em) {         //600px

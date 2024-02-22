@@ -2,7 +2,7 @@ import { Container} from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import chatify from "../../assets/Projects/chatify.png";
 import Curve from "../Waves/Curve";
-import "../../styles/projects.scss";
+import "./projects.scss";
 
 function Projects() {
   return (

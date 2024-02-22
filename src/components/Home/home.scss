@@ -1,5 +1,5 @@
-@import 'colors';
-@import 'global'; 
+@import '../../styles/colors';
+@import '../../styles/global'; 
 /* --------- */
 /* Home section */
 /* --------- */
@@ -11,7 +11,7 @@
 .home-section {
   position: relative;
   z-index: 1;
-  background-image: $image-gradient, url(../assets/home-bg-3.png);
+  background-image: $image-gradient, url(../../assets/home-bg.png);
   background-color: $light;
   background-position: top center;
   background-repeat: no-repeat;

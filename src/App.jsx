@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Preloader from "../src/components/Pre";
+import Preloader from "../src/components/Preloader";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
@@ -13,8 +13,7 @@ import {
   Navigate
 } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
-import "./style.css";
-import "./App.css";
+import "./main.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
