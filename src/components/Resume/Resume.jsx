@@ -2,10 +2,12 @@ import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import pdf from "../../assets/Jared_Nielson_Resume.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
-import { Document, Page } from "react-pdf";
+import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import "react-pdf/dist/esm/Page/TextLayer.css";
 import "./Resume.scss";
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+
 
 function Resume() {
   const width = window.innerWidth;
@@ -18,7 +20,7 @@ function Resume() {
             variant="primary"
             href={pdf}
             target="_blank"
-            className="resume__button"
+            style={{ maxWidth: "250px" }}
           >
             <AiOutlineDownload />
             &nbsp;Download CV
@@ -36,7 +38,7 @@ function Resume() {
             variant="primary"
             href={pdf}
             target="_blank"
-            className="resume__button"
+            style={{ maxWidth: "250px" }}
           >
             <AiOutlineDownload />
             &nbsp;Download CV

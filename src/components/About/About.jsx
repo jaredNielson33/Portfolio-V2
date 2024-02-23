@@ -1,4 +1,3 @@
-import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 // import Github from "./Github";
 import Techstack from "./Techstack";
@@ -30,7 +29,7 @@ function About() {
           <Row className='mb-3'>
             <Col md={12} style={{ textAlign: "center" }}>
               <h1 className='project-heading'>
-                Places I've <strong className='yellow'>Worked </strong>
+                Places I&apos;ve <strong className='yellow'>Worked </strong>
               </h1>
               <WorkPlaces />
             </Col>
