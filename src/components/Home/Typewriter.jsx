@@ -1,7 +1,7 @@
 import Typewriter from "typewriter-effect";
-import "./typewritter.scss";
+import "./Typewriter.scss";
 
-function Type() {
+function TypewriterComponent() {
   return (
     <Typewriter
       options={{
@@ -18,4 +18,4 @@ function Type() {
   );
 }
 
-export default Type;
+export default TypewriterComponent;

@@ -8,7 +8,7 @@ import {
   AiOutlineHome,
   AiOutlineUser,
 } from "react-icons/ai";
-import "../styles/navbar.scss";
+import "../styles/Navbar.scss";
 
 import { CgFileDocument } from "react-icons/cg";
 

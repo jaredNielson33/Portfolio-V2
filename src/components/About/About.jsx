@@ -5,7 +5,7 @@ import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import Toolstack from "./Toolstack";
 import WaveOpacity from "../Waves/WaveOpacity";
-import "./about.scss";
+import "./About.scss";
 import WorkPlaces from "./WorkPlaces";
 
 function About() {

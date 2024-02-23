@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { AiFillGithub, AiFillFacebook } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import "../styles/footer.scss";
+import "../styles/Footer.scss";
 
 function Footer() {
   let date = new Date();

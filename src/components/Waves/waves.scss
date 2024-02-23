@@ -1,4 +1,4 @@
-@import '../../styles/colors';
+@import '../../styles/Colors';
 
 .waves, .waves-opacity {
   position: absolute;
@@ -8,27 +8,23 @@
   overflow: hidden;
   line-height: 0;
   transform: rotate(180deg);
-}
 
-.waves svg, .waves-opacity svg {
-  position: relative;
-  display: block;
-  width: calc(117% + 1.3px);
-  height: 120px;
-}
+  svg {
+    position: relative;
+    display: block;
+    width: calc(117% + 1.3px);
+    height: 120px;
+  }
 
-.waves .shape-fill {
-  fill: $white;
+  .shape-fill {
+    fill: $white;
+  }
 }
 
 .waves-opacity svg {
   width: calc(206% + 1.3px);
   height: 96px;
   transform: rotateY(180deg);
-}
-
-.waves-opacity .shape-fill {
-  fill: $white;
 }
 
 .curve {

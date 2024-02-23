@@ -1,4 +1,4 @@
-import "./waves.scss";
+import "./Waves.scss";
 
 const Curve = () => {
   return (

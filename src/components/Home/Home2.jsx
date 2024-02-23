@@ -1,20 +1,17 @@
-import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
-import { AiFillGithub, AiFillFacebook } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
   return (
-    <Container fluid className='home-about-section' id='about'>
+    <Container fluid className='home-about' id='about'>
       <Container>
         <Row>
-          <Col md={8} className='home-about-description'>
+          <Col md={8} className='home-about__description'>
             <h1 style={{ fontSize: "2.6em" }}>
               LET ME <span className='yellow'> INTRODUCE </span> MYSELF
             </h1>
-            <p className='home-about-body'>
+            <p className='home-about__body'>
               I&rsquo;m Jared Nielson, a seasoned web developer with seven years
               of experience specializing in frontend frameworks and
               technologies. My journey in web development began with a spark of
@@ -29,13 +26,9 @@ function Home2() {
               interfaces, optimizing performance, or integrating cutting-edge
               features, I approach every task with dedication, attention to
               detail, and excellence.
-              <br />
-              <br />
-              {/* If you&rsquo;re looking for a passionate frontend developer who
-              excels at turning ideas into reality, let&rsquo;s connect. */}
             </p>
           </Col>
-          <Col md={4} className='myAvtar'>
+          <Col md={4} className='avatar'>
             <Tilt>
               <img src={myImg} className='img-fluid' alt='avatar' />
             </Tilt>

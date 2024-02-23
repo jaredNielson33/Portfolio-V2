@@ -1,8 +1,7 @@
 import { Container} from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
-import chatify from "../../assets/Projects/chatify.png";
 import Curve from "../Waves/Curve";
-import "./projects.scss";
+import "./Projects.scss";
 
 function Projects() {
   return (
@@ -12,19 +11,19 @@ function Projects() {
           My Recent <strong className="yellow">Works </strong>
         </h1>
         <p className="text-white mb-5">
-          Here are a few projects I've worked on recently.
+          My <strong className="yellow">Projects</strong>
         </p>
         <Curve />  
       </Container>
       <Container fluid className="project-card-container">
           <div className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath='path-to-image'
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="RC Speed"
+              description="Under construction"
+              ghLink="https://github.com/jaredNielson33"
+              demoLink="https://github.com/jaredNielson33"
             />
           </div>
       </Container>

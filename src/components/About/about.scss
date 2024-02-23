@@ -1,9 +1,5 @@
-@import '../../styles//colors';
-@import '../../styles/global';
-
-/* --------- */
-/* About */
-/* --------- */
+@import '../../styles//Colors';
+@import '../../styles/Global';
 
 .about {
   position: relative;
@@ -24,7 +20,7 @@
     padding-bottom: 80px;
   }
 
-  @media (max-width: 767px) {
+  @include respond(phone) {
     &__img {
       padding-top: 0;
     }
@@ -61,7 +57,7 @@
       overflow: hidden;
       transition: all 0.4s ease 0s;
 
-      @media (max-width: 767px) {
+      @include respond(phone) {
         margin: 10px;
       }
 
