@@ -10,10 +10,12 @@ const ProjectCard = ({ imgPath, title, description, ghLink, demoLink, isBlog }) 
       <Card>
         <Card.Img variant="top" src={imgPath} alt="card-img" />
         <Card.Body>
-          <Card.Title>{title}</Card.Title>
-          <Card.Text style={{ textAlign: "justify" }}>
+          <Card.Title><strong>{title}</strong></Card.Title>
+          <Card.Text>
             {description}
           </Card.Text>
+
+          <div className="d-flex justify-content-center">
           <Button variant="primary" href={ghLink} target="_blank">
             <BsGithub /> &nbsp;
             {isBlog ? "Blog" : "GitHub"}
@@ -32,6 +34,7 @@ const ProjectCard = ({ imgPath, title, description, ghLink, demoLink, isBlog }) 
               {"Demo"}
             </Button>
           )}
+          </div>
         </Card.Body>
       </Card>
     </div>
