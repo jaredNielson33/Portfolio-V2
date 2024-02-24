@@ -1,4 +1,5 @@
-// import Preloader from "../src/components/Preloader";
+import { useState, useEffect } from "react";
+import Preloader from "../src/components/Preloader";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
@@ -16,9 +17,20 @@ import "./main.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1200);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <Router>
-      <div className="App">
+      <Preloader load={loading} />
+      <div className="App" id={loading ? "no-scroll" : "scroll"}>
         <Navbar />
         <ScrollToTop />
         <Routes>
