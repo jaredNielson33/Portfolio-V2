@@ -10,10 +10,9 @@ import {
   BrowserRouter as Router,
   Route,
   Routes,
-  Navigate
+  Navigate,
 } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
-import "./main.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
@@ -30,15 +29,15 @@ function App() {
   return (
     <Router>
       <Preloader load={loading} />
-      <div className="App" id={loading ? "no-scroll" : "scroll"}>
+      <div className='App' id={loading ? "no-scroll" : "scroll"}>
         <Navbar />
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/resume" element={<Resume />} />
-          <Route path="*" element={<Navigate to="/"/>} />
+          <Route path='/' element={<Home />} />
+          <Route path='/projects' element={<Projects />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/resume' element={<Resume />} />
+          <Route path='*' element={<Navigate to='/' />} />
         </Routes>
         <Footer />
       </div>
