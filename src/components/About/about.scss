@@ -1,5 +1,5 @@
-@import '../../styles//Colors';
-@import '../../styles/Global';
+@import "../../styles//Colors";
+@import "../../styles/Global";
 
 .about {
   position: relative;
@@ -28,7 +28,7 @@
 
   &-text {
     color: $white;
-    text-align: justify;
+    text-align: left;
   }
 }
 
