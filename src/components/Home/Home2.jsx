@@ -12,7 +12,7 @@ function Home2() {
               LET ME <span className='yellow'> INTRODUCE </span> MYSELF
             </h1>
             <p className='home-about__body'>
-              I&rsquo;m Jared Nielson, a seasoned web developer with seven years
+              I&rsquo;m Jared Nielson, a seasoned web developer with eight years
               of experience specializing in frontend frameworks and
               technologies. My journey in web development began with a spark of
               curiosity and a love for problem-solving. Over the years, this
